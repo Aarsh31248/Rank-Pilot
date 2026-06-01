@@ -16,14 +16,14 @@ export const register = async (req, res) => {
 
     // check if required fields are present
     if (!name || !email || !password) {
-      return res.status(400).json({ message: "Missing required fields" });
+      return res.status(400).json({success: false,  message: "Missing required fields" });
     }
 
     // Check if user already exists
     const existingUser = await User.findOne({ email });
 
     if (existingUser) {
-      return res.status(400).json({ message: "User already exists" });
+      return res.status(400).json({success: false,  message: "User already exists" });
     }
 
     // Create new user
@@ -55,14 +55,14 @@ export const login = async (req, res) => {
 
     // check if required fields are present
     if (!email || !password) {
-      return res.status(400).json({ message: "Missing required fields" });
+      return res.status(400).json({success: false,  message: "Missing required fields" });
     }
 
     // Check if user already exists
     const user = await User.findOne({ email });
 
     if (!user) {
-      return res.status(400).json({ message: "Invalid Credentials" });
+      return res.status(400).json({success: false,  message: "Invalid Credentials" });
     }
 
     // Check Password
@@ -94,6 +94,7 @@ export const getUser = async (req, res) => {
     // Return user
     return res.status(200).json({success: true, user });
   } catch (error) {
-    return res.status(400).json({ message: error.message });
+    console.error("Get user error:", error.message);
+    return res.status(500).json({success: false, message: "Server error" });
   }
 };
