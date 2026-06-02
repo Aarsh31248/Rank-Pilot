@@ -35,10 +35,8 @@ const seoAnalysisSchema = {
         properties: {
           severity: {
             type: Type.STRING,
-            format: "enum",
             enum: ["critical", "warning", "info"],
           },
-
           category: { type: Type.STRING },
           message: { type: Type.STRING },
           recommendation: { type: Type.STRING },

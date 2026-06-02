@@ -20,7 +20,7 @@ export async function scrapeUrl(url) {
     const startTime = Date.now();
     let response;
     try {
-      response = await page.goto(url, { waitUntil: "documentloaded" });
+      response = await page.goto(url, { waitUntil: "networkidle" }); // domcontentloaded (Fast but Blank)
     } catch (navError) {
       await browser.close().catch(() => {});
       browser = null;
@@ -142,5 +142,6 @@ export async function scrapeUrl(url) {
         console.error("[SCRAPER] Failed to close browser:", error.message);
       }
     }
+     return { success: false, error: error.message };
   }
 }
