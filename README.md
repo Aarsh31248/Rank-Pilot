@@ -4,10 +4,13 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-6-F66C48?logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248?logo=mongodb&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/AI-Gemini-blueviolet)
+![Playwright](https://img.shields.io/badge/Automation-Playwright-success)
+![Browserbase](https://img.shields.io/badge/Cloud%20Browser-Browserbase-orange)
 
 Rank Pilot is a full-stack SEO analysis and keyword rank tracking platform. It scans live websites through a cloud browser session, extracts technical SEO signals, uses Gemini to generate structured audit insights, and tracks Google keyword positions over time.
 
-## Features
+## 🧠 Core Features
 
 - AI-assisted SEO audits with overall score, category scores, keywords, issues, and recommendations.
 - Rendered-page scraping for metadata, headings, links, images, word count, page size, and load time.
@@ -60,6 +63,53 @@ flowchart LR
 - Tracks keyword rankings with historical performance data
 - Implements asynchronous processing for long-running audits
 - Demonstrates full-stack ownership across frontend, backend, database, AI, and browser automation layers 
+
+------------------------------------------------------------------------
+
+## 📸 Screenshots
+
+### 🏠 Landing Page
+<p align="center">
+  <img src="./screenshots/landing.png" width="800"/>
+</p>
+
+> Modern landing page introducing AI-powered SEO analysis and keyword tracking capabilities.
+
+---
+
+### 📊 Dashboard Overview
+<p align="center">
+  <img src="./screenshots/dashboard.png" width="800"/>
+</p>
+
+> Centralized dashboard displaying SEO performance metrics, recent scans, and analysis history.
+
+---
+
+### 🔍 SEO Audit Report
+<p align="center">
+  <img src="./screenshots/report.png" width="800"/>
+</p>
+
+> Detailed AI-generated SEO audit containing scores, issues, keyword insights, and actionable recommendations.
+
+---
+
+### 📈 Keyword Rank Tracker
+<p align="center">
+  <img src="./screenshots/keyword.png" width="800"/>
+</p>
+
+> Track keyword rankings, competitor positions, ranking history, and SERP performance over time.
+
+---
+
+### 📜 Analysis History
+<p align="center">
+  <img src="./screenshots/history.png" width="800"/>
+</p>
+
+> View and manage past SEO audits with search, filtering, sorting, and quick access to detailed reports and performance history.
 
 ------------------------------------------------------------------------
 
@@ -135,4 +185,13 @@ Rank-Pilot/
 - Optimizing database queries for large audit histories
 
 ------------------------------------------------------------------------
+
+## 🎯 Recruiter Snapshot
+
+- Built an AI-powered SEO intelligence platform combining website crawling, technical audits, and keyword rank tracking
+- Implemented cloud-browser automation using Browserbase and Playwright to analyze fully rendered websites
+- Integrated Gemini AI to generate structured SEO insights, issue detection, scoring, and recommendations
+- Designed asynchronous processing workflows for long-running SEO audits with background execution and frontend polling
+- Developed a keyword monitoring system with historical tracking, competitor analysis, and automated daily updates
+- Demonstrated full-stack ownership across React, TypeScript, Node.js, Express, MongoDB, browser automation, and AI integrations
 
